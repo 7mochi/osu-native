@@ -93,42 +93,39 @@ internal unsafe class ManiaDifficultyCalculatorTests
     private static IEnumerable<TestCaseData> CalculateTestCases()
     {
         yield return new(
-           "beatmaps/osu/Kenji Ninuma - DISCOPRINCE (peppy) [Normal].osu",
-           null,
-           new NativeManiaDifficultyAttributes(new()
-           {
-               StarRating = 1.9374325665272143,
-               MaxCombo = 761
-           })
-       );
-
+            "beatmaps/osu/Kenji Ninuma - DISCOPRINCE (peppy) [Normal].osu",
+            null,
+            new NativeManiaDifficultyAttributes(new()
+            {
+                StarRating = 1.9374325665272143,
+                MaxCombo = 761,
+            })
+        );
         yield return new(
             "beatmaps/mania/xi - FREEDOM DiVE (razlteh) [Blocko's 7K Black Another].osu",
             "HDHR",
             new NativeManiaDifficultyAttributes(new()
             {
                 StarRating = 8.343351334085787,
-                MaxCombo = 7496
+                MaxCombo = 7496,
             })
         );
-
         yield return new(
             "beatmaps/mania/MYTH & ROID - STYX HELIX (Tsukuyomi) [victorica's Hard].osu",
             "DTFI",
             new NativeManiaDifficultyAttributes(new()
             {
                 StarRating = 4.102620621879934,
-                MaxCombo = 1087
+                MaxCombo = 1087,
             })
         );
-
         yield return new(
             "beatmaps/mania/Soleily - Renatus (ExPew) [Another].osu",
             "IN",
             new NativeManiaDifficultyAttributes(new()
             {
                 StarRating = 6.998209417646642,
-                MaxCombo = 14842
+                MaxCombo = 14842,
             })
         );
     }
@@ -142,10 +139,9 @@ internal unsafe class ManiaDifficultyCalculatorTests
             new NativeTimedManiaDifficultyAttributes(new(78618, new ManiaDifficultyAttributes()
             {
                 StarRating = 1.872751332611175,
-                MaxCombo = 323
+                MaxCombo = 323,
             }))
         );
-
         yield return new(
             "beatmaps/mania/xi - FREEDOM DiVE (razlteh) [Blocko's 7K Black Another].osu",
             "HDHR",
@@ -153,10 +149,9 @@ internal unsafe class ManiaDifficultyCalculatorTests
             new NativeTimedManiaDifficultyAttributes(new(137404, new ManiaDifficultyAttributes()
             {
                 StarRating = 7.546645366446514,
-                MaxCombo = 3847
+                MaxCombo = 3847,
             }))
         );
-
         yield return new(
             "beatmaps/mania/MYTH & ROID - STYX HELIX (Tsukuyomi) [victorica's Hard].osu",
             "DTFI",
@@ -164,10 +159,9 @@ internal unsafe class ManiaDifficultyCalculatorTests
             new NativeTimedManiaDifficultyAttributes(new(52768, new ManiaDifficultyAttributes()
             {
                 StarRating = 3.796474538533101,
-                MaxCombo = 517
+                MaxCombo = 517,
             }))
         );
-
         yield return new(
             "beatmaps/mania/Soleily - Renatus (ExPew) [Another].osu",
             "IN",
@@ -175,7 +169,7 @@ internal unsafe class ManiaDifficultyCalculatorTests
             new NativeTimedManiaDifficultyAttributes(new(94004.58241758242, new ManiaDifficultyAttributes()
             {
                 StarRating = 6.552217804347458,
-                MaxCombo = 6127
+                MaxCombo = 6127,
             }))
         );
     }

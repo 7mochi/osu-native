@@ -67,111 +67,74 @@ internal unsafe class ManiaPerformanceCalculatorTests
     private static IEnumerable<TestCaseData> GetTestCases()
     {
         yield return new(
-            "beatmaps/osu/Kenji Ninuma - DISCOPRINCE (peppy) [Normal].osu",
-            null,
-            new NativeScoreInfo()
-            {
-                MaxCombo = 0,
-                Accuracy = 1,
-                LegacyTotalScore = null,
-                CountMiss = 0,
-                CountMeh = 0,
-                CountOk = 0,
-                CountGood = 0,
-                CountGreat = 0,
-                CountPerfect = 341,
-                CountSmallTickMiss = 0,
-                CountSmallTickHit = 0,
-                CountLargeTickMiss = 0,
-                CountLargeTickHit = 0,
-                CountSliderTailHit = 0
-            },
-            new NativeManiaPerformanceAttributes(new()
-            {
-                Total = 29.360109024870148,
-                Difficulty = 29.360109024870148
-            })
+        "beatmaps/osu/Kenji Ninuma - DISCOPRINCE (peppy) [Normal].osu",
+        null,
+        new NativeScoreInfo()
+        {
+            Accuracy = 1,
+            CountPerfect = 341,
+        },
+        new NativeManiaPerformanceAttributes(new()
+        {
+            Total = 29.360109024870148,
+            Difficulty = 29.360109024870148,
+        })
         );
-
         yield return new(
-            "beatmaps/mania/xi - FREEDOM DiVE (razlteh) [Blocko's 7K Black Another].osu",
-            "HRFI",
-            new NativeScoreInfo()
-            {
-                MaxCombo = 0,
-                Accuracy = 0.9974475699286899,
-                LegacyTotalScore = null,
-                CountMiss = 4,
-                CountMeh = 3,
-                CountOk = 12,
-                CountGood = 7,
-                CountGreat = 31,
-                CountPerfect = 6796,
-                CountSmallTickMiss = 0,
-                CountSmallTickHit = 0,
-                CountLargeTickMiss = 0,
-                CountLargeTickHit = 0,
-                CountSliderTailHit = 0
-            },
-            new NativeManiaPerformanceAttributes(new()
-            {
-                Total = 887.0030883091539,
-                Difficulty = 887.0030883091539
-            })
+        "beatmaps/mania/xi - FREEDOM DiVE (razlteh) [Blocko's 7K Black Another].osu",
+        "HRFI",
+        new NativeScoreInfo()
+        {
+            Accuracy = 0.9974475699286899,
+            CountMiss = 4,
+            CountMeh = 3,
+            CountOk = 12,
+            CountGood = 7,
+            CountGreat = 31,
+            CountPerfect = 6796,
+        },
+        new NativeManiaPerformanceAttributes(new()
+        {
+            Total = 887.0030883091539,
+            Difficulty = 887.0030883091539,
+        })
         );
-
         yield return new(
-            "beatmaps/mania/MYTH & ROID - STYX HELIX (Tsukuyomi) [victorica's Hard].osu",
-            "HDDT",
-            new NativeScoreInfo()
-            {
-                MaxCombo = 0,
-                Accuracy = 0.8595799775327964,
-                LegacyTotalScore = null,
-                CountMiss = 34,
-                CountMeh = 8,
-                CountOk = 96,
-                CountGood = 40,
-                CountGreat = 117,
-                CountPerfect = 566,
-                CountSmallTickMiss = 0,
-                CountSmallTickHit = 0,
-                CountLargeTickMiss = 0,
-                CountLargeTickHit = 0,
-                CountSliderTailHit = 0
-            },
-            new NativeManiaPerformanceAttributes(new()
-            {
-                Total = 43.58112219618832,
-                Difficulty = 43.58112219618832
-            })
+        "beatmaps/mania/MYTH & ROID - STYX HELIX (Tsukuyomi) [victorica's Hard].osu",
+        "HDDT",
+        new NativeScoreInfo()
+        {
+            Accuracy = 0.8595799775327964,
+            CountMiss = 34,
+            CountMeh = 8,
+            CountOk = 96,
+            CountGood = 40,
+            CountGreat = 117,
+            CountPerfect = 566,
+        },
+        new NativeManiaPerformanceAttributes(new()
+        {
+            Total = 43.58112219618832,
+            Difficulty = 43.58112219618832,
+        })
         );
-
         yield return new(
-            "beatmaps/mania/Soleily - Renatus (ExPew) [Another].osu",
-            "INFL",
-            new NativeScoreInfo()
-            {
-                MaxCombo = 0,
-                Accuracy = 0.9994634414235846,
-                LegacyTotalScore = null,
-                CountMiss = 1,
-                CountMeh = 0,
-                CountOk = 2,
-                CountGood = 1,
-                CountGreat = 6,
-                CountPerfect = 5184,
-                CountSmallTickMiss = 0,
-                CountSmallTickHit = 0,
-                CountLargeTickMiss = 0,
-                CountLargeTickHit = 0,
-                CountSliderTailHit = 0
-            },
-            new NativeManiaPerformanceAttributes(new()
-            {
-                Total = 604.5659672217433,
-                Difficulty = 604.5659672217433
-            })
+        "beatmaps/mania/Soleily - Renatus (ExPew) [Another].osu",
+        "INFL",
+        new NativeScoreInfo()
+        {
+            Accuracy = 0.9994634414235846,
+            CountMiss = 1,
+            CountOk = 2,
+            CountGood = 1,
+            CountGreat = 6,
+            CountPerfect = 5184,
+        },
+        new NativeManiaPerformanceAttributes(new()
+        {
+            Total = 604.5659672217433,
+            Difficulty = 604.5659672217433,
+        })
         );
     }
 }

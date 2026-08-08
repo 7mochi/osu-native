@@ -12,6 +12,7 @@ public readonly struct NativeOsuPerformanceAttributes(OsuPerformanceAttributes a
     public readonly double Speed = attributes.Speed;
     public readonly double Accuracy = attributes.Accuracy;
     public readonly double Flashlight = attributes.Flashlight;
+    public readonly double Reading = attributes.Reading;
     public readonly double EffectiveMissCount = attributes.EffectiveMissCount;
     public readonly double? SpeedDeviation = attributes.SpeedDeviation;
     public readonly double ComboBasedEstimatedMissCount = attributes.ComboBasedEstimatedMissCount;

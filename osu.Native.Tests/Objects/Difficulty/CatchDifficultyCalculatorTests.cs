@@ -97,38 +97,35 @@ internal unsafe class CatchDifficultyCalculatorTests
             null,
             new NativeCatchDifficultyAttributes(new()
             {
-                StarRating = 1.3280836378862895,
-                MaxCombo = 310
+                StarRating = 1.2449647913462982,
+                MaxCombo = 310,
             })
         );
-
         yield return new(
             "beatmaps/catch/Lite Show Magic (t+pazolite vs C-Show) - Crack Traxxxx (Fatfan Kolek) [Spec's Hi-Speed Overdose].osu",
             null,
             new NativeCatchDifficultyAttributes(new()
             {
-                StarRating = 5.536300019585655,
-                MaxCombo = 944
+                StarRating = 5.530368648787597,
+                MaxCombo = 944,
             })
         );
-
         yield return new(
             "beatmaps/catch/Hanatan - Airman ga Taosenai (SOUND HOLIC Ver.) (Natsu) [Zero's Overdose].osu",
             "DTFF",
             new NativeCatchDifficultyAttributes(new()
             {
-                StarRating = 7.4250086916273315,
-                MaxCombo = 983
+                StarRating = 7.418883807144687,
+                MaxCombo = 983,
             })
         );
-
         yield return new(
             "beatmaps/catch/Icon For Hire - Make a Move (Speed Up Ver.) (Sotarks) [Ascendance's Overdose].osu",
             "MFFL",
             new NativeCatchDifficultyAttributes(new()
             {
-                StarRating = 4.609845192696199,
-                MaxCombo = 262
+                StarRating = 4.609575554897659,
+                MaxCombo = 262,
             })
         );
     }
@@ -141,41 +138,38 @@ internal unsafe class CatchDifficultyCalculatorTests
             97,
             new NativeTimedCatchDifficultyAttributes(new(82368, new CatchDifficultyAttributes()
             {
-                StarRating = 1.143108905419039,
-                MaxCombo = 144
+                StarRating = 1.099653866192143,
+                MaxCombo = 144,
             }))
         );
-
         yield return new(
             "beatmaps/catch/Lite Show Magic (t+pazolite vs C-Show) - Crack Traxxxx (Fatfan Kolek) [Spec's Hi-Speed Overdose].osu",
             null,
             281,
             new NativeTimedCatchDifficultyAttributes(new(61291, new CatchDifficultyAttributes()
             {
-                StarRating = 5.112422608001735,
-                MaxCombo = 466
+                StarRating = 5.104301352617107,
+                MaxCombo = 466,
             }))
         );
-
         yield return new(
             "beatmaps/catch/Hanatan - Airman ga Taosenai (SOUND HOLIC Ver.) (Natsu) [Zero's Overdose].osu",
             "DTFF",
             378,
             new NativeTimedCatchDifficultyAttributes(new(101370, new CatchDifficultyAttributes()
             {
-                StarRating = 7.017780409236279,
-                MaxCombo = 492
+                StarRating = 7.007726550304218,
+                MaxCombo = 492,
             }))
         );
-
         yield return new(
             "beatmaps/catch/Icon For Hire - Make a Move (Speed Up Ver.) (Sotarks) [Ascendance's Overdose].osu",
             "MFFL",
             70,
             new NativeTimedCatchDifficultyAttributes(new(29316, new CatchDifficultyAttributes()
             {
-                StarRating = 3.8205977060505543,
-                MaxCombo = 125
+                StarRating = 3.8190753864600535,
+                MaxCombo = 125,
             }))
         );
     }
