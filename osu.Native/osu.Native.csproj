@@ -1,10 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework Condition="'$(RuntimeIdentifier)' == 'win-x86'">net10.0-windows</TargetFramework>
+        <TargetFramework Condition="'$(RuntimeIdentifier)' != 'win-x86'">net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <Nullable>enable</Nullable>
+
+        <SupportedOSPlatformVersion Condition="'$(RuntimeIdentifier)' == 'win-x86'">5.1</SupportedOSPlatformVersion>
 
         <!-- NativeAOT configuration -->
         <PublishAot>true</PublishAot>
@@ -48,5 +51,9 @@
         <PackageReference Include="ppy.osu.Game.Resources" Version="2026.710.0">
             <ExcludeAssets>all</ExcludeAssets>
         </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(RuntimeIdentifier)' == 'win-x86'">
+        <PackageReference Include="YY-Thunks" Version="1.2.2"/>
     </ItemGroup>
 </Project>
