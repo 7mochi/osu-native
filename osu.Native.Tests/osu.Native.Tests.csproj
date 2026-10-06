@@ -6,6 +6,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <DisableRuntimeMarshalling>true</DisableRuntimeMarshalling>
         <Nullable>enable</Nullable>
+        <GenerateProgramFile>false</GenerateProgramFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -53,7 +54,12 @@
         <ProjectReference Include="..\osu.Native\osu.Native.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Include="Resources\*.json"/>
+    </ItemGroup>
+
     <Target Name="PrepareTests" AfterTargets="Build" Condition="'$(DesignTimeBuild)' != 'true'">
+        <Exec Command="dotnet &quot;$(TargetPath)&quot; &quot;$(TargetDir).&quot;"/>
         <Exec Command="dotnet publish &quot;$(MSBuildProjectDirectory)/../osu.Native/osu.Native.csproj&quot; --ucr -c $(Configuration) -o &quot;$(TargetDir)native&quot;"/>
     </Target>
 
